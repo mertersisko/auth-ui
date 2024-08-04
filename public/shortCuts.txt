@@ -1,0 +1,31 @@
+** column datatypes
+
+dataType	alignment
+'number'	'right'
+'boolean'	'center'
+'string'	'left'
+'date'	'left'
+'datetime'	'left'
+
+
+
+ <v-col sm="12" md="4" lg="4">
+
+   [ApiController]
+    [Route("[controller]")]
+    public class PartController : ControllerBase
+    {
+        [HttpPost("create")]
+        public IActionResult Create()
+        {
+            List<Microsoft.AspNetCore.Http.IFormFile> files = Request.Form.Files.ToList();
+
+            return Ok("test");
+;
+        }
+    }
+
+
+1-part döküman ve part image gridlerine dosya ekleme
+2- error ların gösterimi
+3-popup içinde popup
